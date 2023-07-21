@@ -736,7 +736,7 @@ MonoBehaviour:
   explosionParticle: {fileID: 1231485012}
   dirtParticle: {fileID: 1744989564}
   jumpSound: {fileID: 8300000, guid: 08ab7053d586c458db3774d33c141a4b, type: 3}
-  crashSound: {fileID: 8300000, guid: 4bcde6de2166e41e284ec46d8a01fb90, type: 3}
+  crashSound: {fileID: 8300000, guid: ced36b419976e6c4cb26c8801ec8daa2, type: 3}
   jumpForce: 600
   gravityModifier: 1.5
   isOnGround: 1
