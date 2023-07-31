@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,7 +22,13 @@ public class SpawnManagerX : MonoBehaviour
     // Spawn obstacles
     void SpawnObjects ()
     {
-        // Set random spawn location and random object index
+
+        if (playerControllerScript.gameOver == false)
+        {
+            Instantiate(objectPrefabs[0], spawnPos, objectPrefabs[0].transform.rotation);
+        }
+
+        /*// Set random spawn location and random object index
         Vector3 spawnLocation = new Vector3(30, Random.Range(5, 15), 0);
         int index = Random.Range(0, objectPrefabs.Length);
 
@@ -29,7 +36,7 @@ public class SpawnManagerX : MonoBehaviour
         if (!playerControllerScript.gameOver == false)
         {
             Instantiate(objectPrefabs[index], spawnLocation, objectPrefabs[index].transform.rotation);
-        }
+        }*/
 
     }
 }
